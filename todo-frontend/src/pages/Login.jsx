@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import { login } from "../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import { FiMail, FiLock } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
 
@@ -39,7 +39,7 @@ const Login = () => {
     if (!validate()) return;
 
     await dispatch(login(form));
-    navigate("/");
+    toast.success("Login successful");
   };
 
   return (

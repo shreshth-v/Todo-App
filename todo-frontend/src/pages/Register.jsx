@@ -3,10 +3,10 @@ import { useDispatch } from "react-redux";
 import { register } from "../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
 import { FiUser, FiMail, FiLock } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [errors, setErrors] = useState({});
 
@@ -31,7 +31,7 @@ const Register = () => {
     e.preventDefault();
     if (!validate()) return;
     await dispatch(register(form));
-    navigate("/");
+    toast.success("User registered successfully");
   };
 
   return (

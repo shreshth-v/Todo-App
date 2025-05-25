@@ -1,0 +1,32 @@
+# Ignore node_modules for both frontend and backend
+todo-backend/node_modules/
+todo-frontend/node_modules/
+
+# Ignore .env files for both frontend and backend
+todo-backend/.env
+todo-frontend/.env
+
+# Ignore build files
+frontend/build/
+backend/build/
+
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore build and cache folders for deployment
+todo-frontend/.vercel/
+todo-frontend/.cache/
+todo-backend/.cache/
+todo-frontend/build/
+todo-backend/build/
+todo-frontend/dist/
+todo-backend/dist/
+
+# Miscellaneous files
+.DS_Store
+
+# Ignore VS Code settings
+.vscode/
+

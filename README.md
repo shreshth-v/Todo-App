@@ -2,10 +2,6 @@
 
 A full-featured Todo List Application that allows users to manage tasks efficiently with secure authentication, CRUD operations, and a responsive UI with light/dark themes.
 
-## 🚀 Live Demo
-
-[Click here to view the live app](#)
-
 ---
 
 ## ✨ Features
@@ -54,7 +50,7 @@ A full-featured Todo List Application that allows users to manage tasks efficien
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/shreshth-v/Todo-App
 cd todo-app
 ```
 

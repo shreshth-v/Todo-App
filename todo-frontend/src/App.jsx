@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AddEditTask from "./pages/AddEditTask";
+import NotFound from "./pages/NotFound";
 import { checkAuth } from "./features/auth/authSlice";
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
               </UnprotectedRoute>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <ToastContainer position="top-right" />
       </div>
